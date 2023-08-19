@@ -2,6 +2,39 @@
   text-align: center;
 }
 
+.card {
+  text-align: center;
+  height: auto;
+  width: 200px;
+  background-color: lightblue;
+  margin: 1rem;
+}
+
+.card1 {
+  text-align: center;
+  background-color: lightblue;
+  margin: 1rem;
+}
+
+.card1 img {
+  object-fit: cover;
+}
+
+img {
+  height: 200px;
+  width: auto;
+  border: 4px 4px black;
+}
+
+.productsList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description {
+  font-size: small;
+}
+
 /*
 .App-logo {
   height: 40vmin;

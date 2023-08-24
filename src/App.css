@@ -1,11 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
 .App {
   text-align: center;
 }
 
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.homepage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(128, 128, 128, 0.396)), url(https://images.pexels.com/photos/1860160/pexels-photo-1860160.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1080px;
+  width: 100%;
+}
+
+.homepage a {
+  text-decoration: none;
+}
+
+.homepage_text {
+  display: block;
+  text-align: center;
+  text-shadow: 2px 2px 20px black;
+  text-decoration: none;
+}
+
+.homepage_text h1 {
+  margin: 10rem 0 5rem 0;
+}
+
+.homepage_text h1,
+h5 {
+  color: whitesmoke;
+}
+
+
 .card {
   text-align: center;
-  height: auto;
-  width: 200px;
   background-color: lightblue;
   margin: 1rem;
 }
@@ -14,6 +50,7 @@
   text-align: center;
   background-color: lightblue;
   margin: 1rem;
+  border-radius: 5px;
 }
 
 .card1 img {
@@ -21,8 +58,8 @@
 }
 
 img {
-  height: 200px;
-  width: auto;
+  height: 400px;
+  width: 100%;
   border: 4px 4px black;
 }
 
@@ -31,9 +68,7 @@ img {
   flex-wrap: wrap;
 }
 
-.description {
-  font-size: small;
-}
+
 
 /*
 .App-logo {

@@ -1,13 +1,18 @@
+
+import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Collapse from 'react-bootstrap/Collapse';
 
 const Product = (props) => {
     const { id, title, category, price, description, image, rating } = props;
 
+    const [open, setOpen] = useState(false);
+
     return (
         <div className="card1">
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={image} />
+            <Card style={{ width: '18rem', border: 'none' }}>
+                <Card.Img src={image} />
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>
@@ -21,10 +26,22 @@ const Product = (props) => {
                         Rating: {rating.rate}
                     </Card.Text>
                     <Card.Text>
-                        <div className='description'>Description: {description}</div>
+                        <Button variant="transparent"
+                            onClick={() => setOpen(!open)}
+                            aria-controls="description"
+                            aria-expanded={open}
+                            style={{ fontWeight: 'bold', textDecoration: 'underline' }}>
+                            Read Description
+                        </Button>
+                        <Collapse in={open}>
+                            <div id='description'>
+                                <p>{description}</p>
+                                <Button variant="primary">Buy</Button>
+                            </div>
+                        </Collapse>
                     </Card.Text>
-                    <Button variant="primary">Buy</Button>
                 </Card.Body>
+                <Button variant="primary" style={{ position: 'absolute', top: '0', right: '0' }}>Buy</Button>
             </Card>
             {/* <h2>{title}</h2>
 
@@ -36,7 +53,7 @@ const Product = (props) => {
 
             {/* <p>{rating}</p> */}
 
-        </div>
+        </div >
     )
 }
 

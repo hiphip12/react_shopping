@@ -1,4 +1,4 @@
-# Weather App made with React
+# React App - Shopping Items
 
 This is a very simple app, that gathers data from the [Fake Store API](https://fakestoreapi.com/) and displays it as a list of products to buy, as a fake store.
 
@@ -25,6 +25,8 @@ npm start
 ## Credits
 
 The assignment, inital codebase and guidance were provided by [Martin Holland](https://github.com/martin-holland) during Sep/Oct 2023 [@Helsinki Business College](https://en.bc.fi).
+
+Shopping data provided by [Fake Store API](https://fakestoreapi.com/)
 
 Images provided by [pexels.com](https://www.pexels.com/)
 

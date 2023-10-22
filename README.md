@@ -4,7 +4,7 @@ This is a very simple app, that gathers data from the [Fake Store API](https://f
 
 This is a project done for the Web Development program [@Helsinki Business School](https://en.bc.fi) (Aug/Sept) 2023). The main focus was to start using Bootstrap and recap on previosu react work, including Axios.
 
-The project has a tracking method throgh console log, as means to track the items clicked with the "buy" button. Next step was to build this app with redux and add a visible shooping cart, but that's a different project.
+The project has a tracking method throgh console log, as a means to track the items clicked with the "buy" button. Next step was to build this app with redux and add a visible shooping cart, but that's a different project.
 
 ## Technologies
 

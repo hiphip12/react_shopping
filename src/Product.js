@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -9,9 +8,14 @@ const Product = (props) => {
 
     const [open, setOpen] = useState(false);
 
+    const addToCart = () => {
+        // using console log purposely, to track items being clicked for "buy" / displaying a shopping cart will be learned oon the redux upcoming class
+        console.log('Item added to cart:', props.title);
+    };
+
     return (
-        <div className="card1">
-            <Card style={{ width: '18rem', border: 'none' }}>
+        <div className="card_bg">
+            <Card className='card_img'>
                 <Card.Img src={image} />
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
@@ -33,28 +37,19 @@ const Product = (props) => {
                             style={{ fontWeight: 'bold', textDecoration: 'underline' }}>
                             Read Description
                         </Button>
+
                         <Collapse in={open}>
-                            <div id='description'>
-                                <p>{description}</p>
-                                <Button variant="primary">Buy</Button>
-                            </div>
+                            <span id='description'>
+                                {description}
+                            </span>
                         </Collapse>
                     </Card.Text>
+
                 </Card.Body>
-                <Button variant="primary" style={{ position: 'absolute', top: '0', right: '0' }}>Buy</Button>
+                <Button variant="primary" onClick={addToCart} style={{ position: 'absolute', top: '0', right: '0' }}>Buy</Button>
             </Card>
-            {/* <h2>{title}</h2>
-
-            <div className="id"><p>ID: {id}</p></div>
-            <div className="category"><p>Category: {category}</p></div>
-            <div className="price"><p>Price: {price}€</p></div>
-            <div className="description"><p>Description: {description}</p></div>
-            <div className="image"><img src={image} alt="product" /></div> */}
-
-            {/* <p>{rating}</p> */}
-
         </div >
-    )
-}
+    );
+};
 
 export default Product;

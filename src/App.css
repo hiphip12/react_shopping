@@ -36,73 +36,25 @@ body {
 
 .homepage_text h1,
 h5 {
-  color: whitesmoke;
+  color: white;
 }
 
 
-.card {
+.card_bg {
   text-align: center;
-  background-color: lightblue;
+  background-color: white;
   margin: 1rem;
-}
-
-.card1 {
-  text-align: center;
-  background-color: lightblue;
-  margin: 1rem;
+  padding: 1rem;
   border-radius: 5px;
 }
 
-.card1 img {
-  object-fit: cover;
-}
-
-img {
-  height: 400px;
-  width: 100%;
-  border: 4px 4px black;
+.card_img {
+  object-fit: contain;
+  width: 18rem;
+  border: none
 }
 
 .productsList {
   display: flex;
   flex-wrap: wrap;
 }
-
-
-
-/*
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-} */

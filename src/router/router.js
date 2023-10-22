@@ -5,18 +5,19 @@ import Test from '../Test';
 import ProductsList from '../ProductsList';
 import Homepage from '../Homepage';
 
+
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Homepage />,
     },
     {
-        path: "/test",
-        element: <Test />,
-    },
-    {
         path: "/products-list",
         element: <ProductsList />,
+    },
+    {
+        path: "/test",
+        element: <Test />,
     },
 ]);
 

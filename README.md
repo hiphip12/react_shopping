@@ -24,7 +24,7 @@ npm start
 
 ## Credits
 
-The assignment, inital codebase and guidance were provided by [Martin Holland](https://github.com/martin-holland) during Sep/Oct 2023 [@Helsinki Business College](https://en.bc.fi).
+The assignment, and guidance were provided by [Martin Holland](https://github.com/martin-holland) during Aug/Sep 2023 [@Helsinki Business College](https://en.bc.fi).
 
 Shopping data provided by [Fake Store API](https://fakestoreapi.com/)
 
